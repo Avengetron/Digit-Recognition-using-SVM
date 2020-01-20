@@ -1,0 +1,307 @@
+Digit Recognition Using Machine Learning
+
+A PROJECT REPORT
+
+Submitted in partital fulfillment of the requirement of the degree of 
+BACHELOR OF TECHNOLOGY
+IN 
+COMPUTER SCIENCE AND ENGINEERING 
+
+Supervised by: -								         Submitted by: -
+Ms. Shivangi Mam								         Mr. Yash Dubey
+    (1809010135)
+
+ 
+
+Department of Computer Science & Information Technology
+IEC College of Engineering &Technology
+Greater Noida (UP) India 201310
+
+Certificate
+
+This is certified that Master Yash Dubey s/o Mr. Arunesh Dubey of B. Tech (Computer Science and Engineering) of 2 years of this institution has successfully completed the project name “Digit Recognition Using Machine Learning” in specified time. The project has been prepared as per the institution of the “AKTU, Lucknow” for the session 2019-20 of IEC College of Engineering and Technology.
+
+This record of his own successful work is accepted for awarding sessional work for the semester examination.
+
+ 
+Acknowledgment
+
+I would like to express my deep and sincere gratitude to my Supervisor Ms. Shivangi Agrawal
+Who gave me his full support and encouraged me to work in an innovative and challenging project for the education field. His wide knowledge and logical thinking gave me the right direction all the time.
+We are deeply grateful for my project coordinator for his help and support provide at every step of the project.
+Last but not least, I thank all teachers of IEC College of Engineering and Technology, for their support and co-operation.  
+ 
+ 
+Abstracts
+
+
+The project “Digit Recognition Using Machine Learning” is developed in Anaconda using Python language with the help of several libraries and scikit-learn data Set used and Training Data set.  
+The model is developed for recognizing mono-chromatic handwritten digits which lies between 0-9 
+
+Libraries used: -
+•	Pandas
+•	NumPy
+•	Scikit-Learn
+•	SciPy
+Data Sets: -
+1.	Test data set
+a.	Created on Windows 3D paint with a black background and written with a white mark
+
+2.	Training Data set
+a.	The data set is taken from scikit-learn “Recognizing hand-written digits.”
+
+
+
+ 
+Reference
+
+•	Test data Set 
+o	Link: - https://scikit-learn.org/stable/auto_examples/classification/plot_digits_classification.html#sphx-glr-auto-examples-classification-plot-digits-classification-py
+
+•	Scikit learn
+o	Link: - https://scikit-learn.org/
+
+•	NumPy
+o	Link: - https://numpy.org/
+
+•	Pandas
+o	Link: - https://pandas.pydata.org/
+
+•	SciPy
+o	Link: - https://www.scipy.org/
+
+•	Python 
+o	Link: - https://www.python.org/
+
+•	Anaconda
+o	Link: - https://www.anaconda.com/
+
+ 
+List of Content
+CHAPTER 1: Introduction
+1.1: Types of data
+1.2: Data Science 
+1.3: Machine Learning 
+1.4: Artificial Intelligence
+
+CHAPTER 2: Machine Learning 
+            2.1: Types of machine learning 
+	2.2: Application Of machine learning
+
+CHAPTER 3: Libraries for this model
+	3.1: Pandas
+	3.2: NumPy
+	3.3: SciPy
+	3.4: Sklearn
+	3.5:  SVM (Support Vector Machine)
+
+CHAPTER 4: Digit Recognition Model
+ 	4.1: Training Data Set 
+	4.2: Test Data Set
+	4.3: Model Code
+
+1. Introduction
+Data is a collection of figures and facts and is raw, unprocessed, and unorganized. The Latin root of the word “data” means “something given”, which is a good way to look at it.
+Data is raw, uncategorized facts that need to be processed. Data can be something simple and seemingly random useless until it is organized.
+
+1.1 Types of Data
+Structured data: Structured data is the data that conforms to a data model, has a well-defined structure, follows a consistent order and can be easily accessed and used by a person or a computer program. Structured data is usually stored in well-defined schemas such as Databases.
+Unstructured data: Unstructured data (or unstructured information) is information that either does not have a pre-defined data model or is not organized in a pre-defined manner. Unstructured information is typically text-heavy but may contain data such as dates, numbers, and facts as well.  
+Qualitative data: Qualitative research is a scientific method of observation to gather non-numerical data. This type of research "refers to the meanings, concepts, definitions, characteristics, metaphors, symbols, and description of things" and not to their "counts or measures".
+Quantitative data: Quantitative data are measures of values or counts and are expressed as numbers. Quantitative data are data about numeric variables (e.g. how many; how much; or how often). Qualitative data are measures of 'types' and may be represented by a name, symbol, or a number code.
+Discrete data: Information that can be categorized into a classification. Discrete data is based on counts. Only a finite number of values is possible, and the values cannot be subdivided meaningfully. For example, the number of parts damaged in shipment.
+Continuous data: Definition of Continuous Data: Information that can be measured on a continuum or scale. Continuous data is data that can be measured and broken down into smaller parts and still have meaning. Money, temperature and time are continuous.
+
+1.2 Data Science:
+Data science is a multi-disciplinary field that uses scientific methods, processes, algorithms, and systems to extract knowledge and insights from structured and unstructured data. Data science is related to data mining and big data.
+Data science is a "concept to unify statistics, data analysis, machine learning, and their related methods" in order to "understand and analyze actual phenomena" with data. It employs techniques and theories drawn from many fields within the context of mathematics, statistics, computer science, and information science. Turing award winner Jim Gray imagined data science as a "fourth paradigm" of science (empirical, theoretical, computational and now data-driven) and asserted that "everything about science is changing because of the impact of information technology" and the data deluge. In 2015, the American Statistical Association identified database management, statistics and machine learning, and distributed and parallel systems as the three emerging foundational professional communities. 
+
+1.3 Machine Learning:
+Machine learning (ML) is the scientific study of algorithms and statistical models that computer systems use to perform a specific task without using explicit instructions, relying on patterns and inference instead. It is seen as a subset of artificial intelligence. Machine learning algorithms build a mathematical model based on sample data, known as "training data", in order to make predictions or decisions without being explicitly programmed to perform the task. Machine learning algorithms are used in a wide variety of applications, such as email filtering and computer vision, where it is difficult or infeasible to develop a conventional algorithm for effectively performing the task.
+Machine learning is closely related to computational statistics, which focuses on making predictions using computers. The study of mathematical optimization delivers methods, theory and application domains to the field of machine learning. Data mining is a field of study within machine learning and focuses on exploratory data analysis through unsupervised learning. In its application across business problems, machine learning is also referred to as predictive analytics.
+
+1.4 Artificial Intelligence:
+In computer science, artificial intelligence (AI), sometimes called machine intelligence, is intelligence demonstrated by machines, in contrast to the natural intelligence displayed by humans. Leading AI textbooks define the field as the study of "intelligent agents": any device that perceives its environment and takes actions that maximize its chance of successfully achieving its goals. Colloquially, the term "artificial intelligence" is often used to describe machines (or computers) that mimic "cognitive" functions that humans associate with the human mind, such as "learning" and "problem-solving".
+As machines become increasingly capable, tasks considered to require "intelligence" are often removed from the definition of AI, a phenomenon known as the AI effect. A quip in Tesler's Theorem says "AI is whatever hasn't been done yet." For instance, optical character recognition is frequently excluded from things considered to be AI, having become a routine technology. Modern machine capabilities generally classified as AI include successfully understanding human speech, competing at the highest level in strategic game systems (such as chess and Go), autonomously operating cars, intelligent routing in content delivery networks, and military simulations.
+Artificial intelligence was founded as an academic discipline in 1956, and in the years since has experienced several waves of optimism, followed by disappointment and the loss of funding (known as an "AI winter"), followed by new approaches, success, and renewed funding. For most of its history, AI research has been divided into subfields that often fail to communicate with each other. These sub-fields are based on technical considerations, such as particular goals (e.g. "robotics" or "machine learning"), the use of particular tools ("logic" or artificial neural networks), or deep philosophical differences. Subfields have also been based on social factors (particular institutions or the work of particular researchers). 
+The traditional problems (or goals) of AI research include reasoning, knowledge representation, planning, learning, natural language processing, perception and the ability to move and manipulate objects. General intelligence is among the field's long-term goals. Approaches include statistical methods, computational intelligence, and traditional symbolic AI. Many tools are used in AI, including versions of search and mathematical optimization, artificial neural networks, and methods based on statistics, probability and economics. The AI field draws upon computer science, information engineering, mathematics, psychology, linguistics, philosophy, and many other fields.
+The field was founded on the assumption that human intelligence "can be so precisely described that a machine can be made to simulate it". This raises philosophical arguments about the nature of the mind and the ethics of creating artificial beings endowed with human-like intelligence. These issues have been explored by myth, fiction, and philosophy since antiquity. Some people also consider AI to be a danger to humanity if it progresses unabated. Others believe that AI, unlike previous technological revolutions, will create a risk of mass unemployment. 
+In the twenty-first century, AI techniques have experienced a resurgence following concurrent advances in computer power, large amounts of data, and theoretical understanding; and AI techniques have become an essential part of the technology industry, helping to solve many challenging problems in computer science, software engineering, and operations research.
+
+
+
+
+
+
+
+
+
+2.1 Types of Machine Learning:
+2.1.1 Supervised learning:
+Supervised learning algorithms build a mathematical model of a set of data that contains both the inputs and the desired outputs. The data is known as training data and consists of a set of training examples. Each training example has one or more inputs and the desired output, also known as a supervisory signal. In the mathematical model, each training example is represented by an array or vector, sometimes called a feature vector, and the training data is represented by a matrix. Through iterative optimization of an objective function, supervised learning algorithms learn a function that can be used to predict the output associated with new inputs. An optimal function will allow the algorithm to correctly determine the output for inputs that were not a part of the training data. An algorithm that improves the accuracy of its outputs or predictions over time is said to have learned to perform that task.[6]
+Supervised learning algorithms include classification and regression. Classification algorithms are used when the outputs are restricted to a limited set of values, and regression algorithms are used when the outputs may have any numerical value within a range. Similarity learning is an area of supervised machine learning closely related to regression and classification, but the goal is to learn from examples using a similarity function that measures how similar or related two objects are. It has applications in the ranking, recommendation systems, visual identity tracking, face verification, and speaker verification.
+In the case of semi-supervised learning algorithms, some of the training examples are missing training labels, but they can nevertheless be used to improve the quality of a model. In weakly supervised learning, the training labels are noisy, limited, or imprecise; however, these labels are often cheaper to obtain, resulting in larger effective training sets.
+
+2.1.2 Unsupervised learning:
+Unsupervised learning algorithms take a set of data that contains only inputs, and find structure in the data, like grouping or clustering of data points. The algorithms, therefore, learn from test data that has not been labeled, classified or categorized. Instead of responding to feedback, unsupervised learning algorithms identify commonalities in the data and react based on the presence or absence of such commonalities in each new piece of data. A central application of unsupervised learning is in the field of density estimation in statistics, though unsupervised learning encompasses other domains involving summarizing and explaining data features.
+Cluster analysis is the assignment of a set of observations into subsets (called clusters) so that observations within the same cluster are similar according to one or more predesignated criteria, while observations drawn from different clusters are dissimilar. Different clustering techniques make different assumptions on the structure of the data, often defined by some similarity metric and evaluated, for example, by internal compactness, or the similarity between members of the same cluster, and separation, the difference between clusters. Other methods are based on estimated density and graph connectivity.
+
+
+2.1.3 Reinforcement learning:
+Reinforcement learning is an area of machine learning concerned with how software agents ought to take actions in an environment so as to maximize some notion of cumulative reward. Due to its generality, the field is studied in many other disciplines, such as game theory, control theory, operations research, information theory, simulation-based optimization, multi-agent systems, swarm intelligence, statistics, and genetic algorithms. In machine learning, the environment is typically represented as a Markov Decision Process (MDP). Many reinforcement learning algorithms use dynamic programming techniques. Reinforcement learning algorithms do not assume knowledge of an exact mathematical model of the MDP and are used when exact models are infeasible. Reinforcement learning algorithms are used in autonomous vehicles or in learning to play a game against a human opponent.
+
+2.1.4 Semi-supervised Learning:
+Semi-supervised learning falls between unsupervised learning (without any labeled training data) and supervised learning (with completely labeled training data). Many machine-learning researchers have found that unlabeled data, when used in conjunction with a small amount of labeled data, can produce a considerable improvement in learning accuracy.
+
+   
+3. Libraries used for this model:
+
+3.1 Pandas
+In computer programming, pandas is a software library written for the Python programming language for data manipulation and analysis. In particular, it offers data structures and operations for manipulating numerical tables and time series. It is free software released under the three-clause BSD license. The name is derived from the term "panel data", an econometrics term for data sets that include observations over multiple time periods for the same individuals.
+
+3.1.1 Library Features:
+•	Data Frame object for data manipulation with integrated indexing.
+•	Tools for reading and writing data between in-memory data structures and different file formats.
+•	Data alignment and integrated handling of missing data.
+•	Reshaping and pivoting of data sets.
+•	Label-based slicing, fancy indexing, and subsetting of large data sets.
+•	Data structure column insertion and deletion.
+•	Group by engine allowing split-apply-combine operations on data sets.
+•	Data set merging and joining.
+•	Hierarchical axis indexing to work with high-dimensional data in a lower-dimensional data structure.
+•	Time series-functionality: Date range generation and frequency conversion, moving window statistics, moving window linear regressions, date shifting and lagging.
+•	It provides data filtration.
+The library is highly optimized for performance, with critical code paths written in Python or C.
+
+3.1.2 Data frames:
+Pandas is mainly used for machine learning in the form of data frames. Pandas allow importing data of various file formats such as CSV, Excel etc. Pandas allow various data manipulation operations such as group by, join, merge, melt, concatenation as well as data cleaning features such as filling, replacing or imputing null values.
+
+3.2 NumPy:
+NumPy is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays. The ancestor of NumPy, Numeric, was originally created by Jim Hugunin with contributions from several other developers. In 2005, Travis Oliphant created NumPy by incorporating features of the competing Numarray into Numeric, with extensive modifications. NumPy is open-source software and has many contributors.
+
+3.2.1 Features:
+
+NumPy targets the Python reference implementation of Python, which is a non-optimizing bytecode interpreter. Mathematical algorithms are written for this version of Python often run much slower than compiled equivalents. NumPy addresses the slowness problem partly by providing multidimensional arrays and functions and operators that operate efficiently on arrays, requiring rewriting some code, mostly inner loops using NumPy.
+Using NumPy in Python gives functionality comparable to MATLAB since they are both interpreted, and they both allow the user to write fast programs as long as most operations work on arrays or matrices instead of scalars. In comparison, MATLAB boasts a large number of additional toolboxes, notably Simulink, whereas NumPy is intrinsically integrated with Python, a more modern and complete programming language. Moreover, complementary Python packages are available; SciPy is a library that adds more MATLAB-like functionality and Matplotlib is a plotting package that provides MATLAB-like plotting functionality. Internally, both MATLAB and NumPy rely on BLAS and LAPACK for efficient linear algebra computations.
+Python bindings of the widely used computer vision library OpenCV utilize NumPy arrays to store and operate on data. Since images with multiple channels are simply represented as three-dimensional arrays, indexing, slicing or masking with other arrays are very efficient ways to access specific pixels of an image. The NumPy array as a universal data structure in OpenCV for images, extracted feature points, filter kernels and many more vastly simplifies the programming workflow and debugging.
+3.2.2 The nd array data structure:
+The core functionality of NumPy is its "ndarray", for an n-dimensional array, data structure. These arrays are stridden views on memory. In contrast to Python's built-in list data structure (which, despite the name, is a dynamic array), these arrays are homogeneously typed: all elements of a single array must be of the same type.
+Such arrays can also be views into memory buffers allocated by C/C++, Cython, and Fortran extensions to the CPython interpreter without the need to copy data around, giving a degree of compatibility with existing numerical libraries. This functionality is exploited by the SciPy package, which wraps a number of such libraries (notably BLAS and LAPACK). NumPy has built-in support for memory-mapped ndarrays.
+3.2.3 Limitations:
+Inserting or appending entries to an array is not as trivially possible as it is with Python's lists. The np.pad(...) routine to extend arrays actually creates new arrays of the desired shape and padding values, copies the given array into the new one and returns it. NumPy's np.concatenate([a1,a2]) operation does not actually link the two arrays but returns a new one, filled with the entries from both given arrays in sequence. Reshaping the dimensionality of an array with np.reshape(...) is only possible as long as the number of elements in the array does not change. These circumstances originate from the fact that NumPy's arrays must be views on contiguous memory buffers. A replacement package called Blaze attempts to overcome this limitation.
+Algorithms that are not expressible as a vectorized operation will typically run slowly because they must be implemented in "pure Python", while vectorization may increase memory complexity of some operations from constant to linear because temporary arrays must be created that are as large as the inputs. Runtime compilation of numerical code has been implemented by several groups to avoid these problems; open-source solutions that interoperate with NumPy include scipy. weave, numexpr and Numba. Cython and Pythran are static-compiling alternatives to these.
+
+3.3 SciPy:
+SciPy is a free and open-source Python library used for scientific computing and technical computing.
+SciPy contains modules for optimization, linear algebra, integration, interpolation, special functions, FFT, signal and image processing, ODE solvers and other tasks common in science and engineering.
+SciPy builds on the NumPy array object and is part of the NumPy stack which includes tools like Matplotlib, pandas, and SymPy, and an expanding set of scientific computing libraries. This NumPy stack has similar users to other applications such as MATLAB, GNU Octave, and Scilab. The NumPy stack is also sometimes referred to as the SciPy stack.
+SciPy is also a family of conferences for users and developers of these tools: SciPy (in the United States), EuroSciPy (in Europe) and SciPy.in (in India). Enthought originated the SciPy conference in the United States and continues to sponsor many of the international conferences as well as host the SciPy website.
+The SciPy library is currently distributed under the BSD license, and its development is sponsored and supported by an open community of developers. It is also supported by NumFOCUS, a community foundation for supporting reproducible and accessible science.
+
+Components:
+The SciPy package of key algorithms and functions core to Python's scientific computing capabilities. Available sub-packages include:
+•	constants: physical constants and conversion factors
+•	cluster: hierarchical clustering, vector quantization, K-means
+•	fftpack: Discrete Fourier Transform algorithms
+•	integrate: numerical integration routines
+•	interpolate: interpolation tools
+•	IO: data input and output
+•	lib: Python wrappers to external libraries
+•	linalg: linear algebra routines
+•	misc: miscellaneous utilities (e.g. image reading/writing)
+•	ndimage: various functions for multi-dimensional image processing
+•	optimize: optimization algorithms including linear programming
+•	signal: signal processing tools
+•	sparse: sparse matrix and related algorithms
+•	spatial: KD-trees, nearest neighbors, distance functions
+•	special: special functions
+•	stats: statistical functions
+•	weave: a tool for writing C/C++ code as Python multiline strings
+
+Data Structures:
+The basic data structure used by SciPy is a multidimensional array provided by the NumPy module. NumPy provides some functions for linear algebra, Fourier transforms, and random number generation, but not with the generality of the equivalent functions in SciPy. NumPy can also be used as an efficient multi-dimensional container of data with arbitrary data types. This allows NumPy to seamlessly and speedily integrate with a wide variety of databases. Older versions of SciPy used Numeric as an array type, which is now deprecated in favor of the newer NumPy array code.
+
+3.4 Scikit-learn (sklearn):
+Scikit-learn (formerly scikits learn and also known as sklearn) is a free software machine learning library for the Python programming language. It features various classification, regression and clustering algorithms including support vector machines, random forests, gradient boosting, k-means and DBSCAN, and is designed to interoperate with the Python numerical and scientific libraries NumPy and SciPy.
+
+Implementation:
+Scikit-learn is largely written in Python and uses numpy extensively for high-performance linear algebra and array operations. Furthermore, some core algorithms are written in Cython to improve performance. Support vector machines are implemented by a Cython wrapper around LIBSVM; logistic regression and linear support vector machines by a similar wrapper around LIBLINEAR. In such cases, extending these methods with Python may not be possible.
+Scikit-learn integrates well with many other Python libraries, such as matplotlib and plotly for plotting, numpy for array vectorization, pandas data frames, scipy, and many more
+
+
+
+3.5 SVM (Support Vector Machine):
+In machine learning, support vector machines (SVMs, also support vector networks) are supervised learning models with associated learning algorithms that analyze data used for classification and regression analysis. Given a set of training examples, each marked as belonging to one or the other of two categories, an SVM training algorithm builds a model that assigns new examples to one category or the other, making it a non-probabilistic binary linear classifier (although methods such as Platt scaling exist to use SVM in a probabilistic classification setting). An SVM model is a representation of the examples as points in space, mapped so that the examples of the separate categories are divided by a clear gap that is as wide as possible. New examples are then mapped into that same space and predicted to belong to a category based on the side of the gap on which they fall.
+In addition to performing linear classification, SVMs can efficiently perform a non-linear classification using what is called the kernel trick, implicitly mapping their inputs into high-dimensional feature spaces.
+When data are unlabelled, supervised learning is not possible, and an unsupervised learning approach is required, which attempts to find the natural clustering of the data to groups, and then map new data to these formed groups. The support-vector clustering algorithm, created by Hava Siegelmann and Vladimir Vapnik, applies the statistics of support vectors, developed in the support vector machines algorithm, to categorize unlabeled data, and is one of the most widely used clustering algorithms in industrial applications
+More formally, a support vector machine constructs a hyperplane or set of hyperplanes in a high- or infinite-dimensional space, which can be used for classification, regression, or other tasks like outlier detection. Intuitively, a good separation is achieved by the hyperplane that has the largest distance to the nearest training-data point of any class (so-called functional margin), since in general the larger the margin, the lower the generalization error of the classifier.
+Whereas the original problem may be stated in a finite-dimensional space, it often happens that the sets to discriminate are not linearly separable in that space. For this reason, it was proposed that the original finite-dimensional space be mapped into a much higher-dimensional space, presumably making the separation easier in that space. To keep the computational load reasonable, the mappings used by SVM schemes are designed to ensure that dot products of pairs of input data vectors may be computed easily in terms of the variables in the original space, by defining them in terms of a kernel function selected to suit the problem.[5] The hyperplanes in the higher-dimensional space are defined as the set of points whose dot product with a vector in that space is constant, where such a set of vectors is an orthogonal (and thus minimal) set of vectors that defines a hyperplane. The vectors defining the hyperplanes can be chosen to be linear combinations with parameters of images of feature vectors that occur in the database With this choice of a hyperplane, the points in the feature space that are mapped into the hyperplane are defined by the relation. Note that it becomes small as grows further away from, each term in the sum measures the degree of closeness of the test point to the corresponding database point. In this way, the sum of kernels above can be used to measure the relative nearness of each test point to the data points originating in one or the other of the sets to be discriminated against. Note the fact that the set of points mapped into any hyperplane can be quite convoluted as a result, allowing much more complex discrimination between sets that are not convex at all in the original space.
+
+Applications:
+SVMs can be used to solve various real-world problems:
+•	SVMs are helpful in text and hypertext categorization, as their application can significantly reduce the need for labeled training instances in both the standard inductive and transductive settings. Some methods for shallow semantic parsing are based on support vector machines. 
+
+•	Classification of images can also be performed using SVMs. Experimental results show that SVMs achieve significantly higher search accuracy than traditional query refinement schemes after just three to four rounds of relevance feedback. This is also true for image segmentation systems, including those using a modified version SVM that uses the privileged approach as suggested by Vapnik. 
+
+
+•	Hand-written characters can be recognized using SVM. 
+
+•	The SVM algorithm has been widely applied in biological and other sciences. They have been used to classify proteins with up to 90% of the compounds classified correctly. Permutation tests based on SVM weights have been suggested as a mechanism for the interpretation of SVM models. Support-vector machine weights have also been used to interpret SVM models in the past. Posthoc interpretation of support-vector machine models in order to identify features used by the model to make predictions is a relatively new area of research with special significance in the biological sciences.
+
+ 
+4.1 Training Data Set:
+
+ 
+
+
+
+ 
+
+4.2 Test Data Set:
+ 	   
+        
+
+
+4.1 Model Code:
+import pandas as pd 
+import numpy as np
+from sklearn import datasets  #loading different data sets from scikit-learn
+from sklearn.svm import SVC
+from scipy import misc
+
+
+mydata=datasets.load_digits()  #testing datasets of hand written digits.
+
+#machine learning model
+#classify the training data set using SVC of SVM
+X=mydata.data
+Y=mydata.target
+trainer=SVC(gamma=.00001)  #gamma defines the learning rate of the ML model
+lr=trainer.fit(X,Y)
+myimage=misc.imread(r"C:\Users\asus\Desktop\DataSets-master\55.png")
+
+#Resizing....256*256......8*8.....
+#myimage_rs is resized image
+myimage_rs=misc.imresize(myimage,(8,8))
+
+#Int float (myimage(8)...float)
+myimage_rs_float=myimage_rs.astype(mydata.images.dtype)
+#Down scaling
+myimage_rs_float_scale=misc.bytescale(myimage_rs_float,high=16,low=0)  #byte scaler needs float value and 
+                                                                        #then it converts it into an integer value
+
+newimagescalefloat=myimage_rs_float_scale.astype(mydata.images.dtype)
+#converting each row and each pixle
+mylist=[]
+for i in newimagescalefloat:
+    for j in i:
+        mylist.append(sum(j)/3.0)
+len(mylist)
+
+my_testimage=np.array(mylist)
+
+mytestimage2d=my_testimage.reshape(1,len(my_testimage)) #mytestimage2d=[[my_testimage]]
+
+lr.predict(mytestimage2d)
+
+
